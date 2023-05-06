@@ -79,7 +79,7 @@ class _HomeScreenState extends State<HomeScreen> {
               var internetState = context.watch<InternetCubit>().state;
               if (internetState is InternetConnected) {
                 return Text(
-                    'Counter: ${counterState.counterValue} Internet: ${internetState.connectionType.toString()}');
+                    'Counter: ${counterState.counterValue}\nInternet: ${internetState.connectionType.toString()}');
               } else {
                 return Text(
                     'Counter: ${counterState.counterValue} Internet: Disconected');
